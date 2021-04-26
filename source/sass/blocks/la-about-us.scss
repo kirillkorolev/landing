@@ -1,0 +1,107 @@
+.la-about-us {
+  padding: 112px 0;
+}
+
+.la-about-us__title {
+  text-align: center;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.15px;
+  color: $dark-black;
+  margin: 0 0 16px;
+}
+
+.la-about-us__text {
+  margin: 0 auto 56px;
+  width: 100%;
+  max-width: 966px;
+  padding: 0 10px;
+  letter-spacing: 0.25px;
+  text-align: center;
+}
+
+.la-about-us__list {
+  @include reset-list;
+
+  display: flex;
+  justify-content: center;
+  max-width: 1150px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.la-about-us__item {
+  max-width: 290px;
+  width: 100%;
+  text-align: center;
+
+  &:not(:last-child) {
+    border-right: 1px solid $grey;
+  }
+}
+
+.la-about-us__number {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 56px;
+  color: $blue;
+  display: block;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 1439px) {
+  .la-about-us__text {
+    width: 80%;
+  }
+
+  .la-about-us__item {
+    width: 244px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .la-about-us {
+    padding: 96px 0;
+  }
+
+  .la-about-us__text {
+    width: 100%;
+    padding: 0 24px;
+    margin-bottom: 48px;
+  }
+
+  .la-about-us__item {
+    width: 185px;
+  }
+}
+
+@media (max-width: 767px) {
+  .la-about-us {
+    padding: 64px 20px;
+  }
+
+  .la-about-us__list {
+    flex-direction: column;
+  }
+
+  .la-about-us__item {
+    width: 100%;
+    max-width: none;
+
+    &:not(:last-child) {
+      border-right: none;
+      border-bottom: 1px solid $grey;
+      padding-bottom: 20px;
+    }
+
+    &:not(:first-child) {
+      padding-top: 20px;
+    }
+  }
+
+  .la-about-us__text {
+    padding: 0;
+    margin-bottom: 30px;
+  }
+}

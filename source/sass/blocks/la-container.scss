@@ -1,0 +1,11 @@
+.la-container {
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.la-container__main {
+  flex-grow: 1;
+}

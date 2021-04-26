@@ -1,0 +1,50 @@
+.la-social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38.4px;
+  height: 38.4px;
+  border-radius: 50%;
+  color: $white;
+  transition: all 0.2s ease 0.1s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.la-social {
+  @include reset-list;
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+.la-social__item {
+  flex-shrink: 0;
+
+  &--twitter {
+    .la-social__link {
+      background-color: $sky-blue;
+    }
+  }
+
+  &--vk {
+    .la-social__link {
+      background-color: $sea-blue;
+    }
+  }
+
+  &--facebook {
+    .la-social__link {
+      background-color: $navy;
+    }
+  }
+
+  &:not(:last-child) {
+    margin-right: 9.6px;
+  }
+}

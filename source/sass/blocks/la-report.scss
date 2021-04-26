@@ -1,0 +1,126 @@
+.la-report {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1160px;
+  padding: 112px 10px;
+
+  background-image: url("../img/background/bg-report@1x.png");
+  background-repeat: no-repeat;
+  background-size: 228px 228px;
+  background-position: top 112px right 10px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/background/bg-report@2x.png");
+  }
+}
+
+.la-report__title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  color: $dark-black;
+  margin: 0 0 32px;
+  letter-spacing: 0.15px;
+  max-width: 660px;
+}
+
+.la-report__list {
+  @include reset-list;
+
+  margin-bottom: 23px;
+  max-width: 660px;
+}
+
+.la-report__item {
+  padding-left: 32px;
+  position: relative;
+  letter-spacing: 0.25px;
+
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/icons/icon-blue-check.svg");
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 10px;
+    background-size: auto;
+    left: 4px;
+    top: 6px;
+  }
+}
+
+.la-report__bonus-title {
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  color: $dark-black;
+  letter-spacing: 0.25px;
+  font-weight: 500;
+}
+
+.la-report__bonus-text {
+  letter-spacing: 0.25px;
+  max-width: 660px;
+}
+
+@media (max-width: 1439px) {
+  .la-report {
+    padding-left: 32px;
+    padding-right: 32px;
+    background-position: top 82px right 31px;
+  }
+
+  .la-report__title {
+    max-width: none;
+    width: 55%;
+  }
+
+  .la-report__list {
+    max-width: none;
+    width: 58%;
+  }
+
+  .la-report__bonus-text {
+    max-width: none;
+    width: 57%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .la-report {
+    padding: 96px 24px;
+  }
+
+  .la-report__title,
+  .la-report__bonus-text {
+    width: 65%;
+  }
+
+  .la-report__list {
+    width: 61%;
+  }
+}
+
+@media (max-width: 767px) {
+  .la-report {
+    background-image: none;
+    padding: 64px 20px;
+  }
+
+  .la-report__title {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .la-report__list {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .la-report__bonus-text {
+    width: 100%;
+  }
+}

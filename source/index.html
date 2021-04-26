@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="preload" href="fonts/roboto-regular.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/roboto-regular.woff" as="font" crossorigin>
+  <link rel="preload" href="fonts/roboto-bold.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/roboto-bold.woff" as="font" crossorigin>
+  <link rel="preload" href="fonts/roboto-medium.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/roboto-medium.woff" as="font" crossorigin>
+  <link rel="shortcut icon" type="image/ico" sizes="16x16" href="favicon.ico">
+  <title>Monthly analytics of industry</title>
+  <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <script src="./js/plugins/picturefill.min.js" async></script>
+</head>
+<body>
+  <div style="display: none">
+    <include src="build/img/sprite_auto.svg"></include>
+  </div>
+  <div class="la-container">
+    <header class="la-container__header la-header">
+      <div class="la-header__container">
+        <a href="#" target="_blank" class="la-header__logo-link">
+          <picture>
+            <source type="image/webp" srcset="./img/pictures/logo-meatinfo@1x.webp, ./img/pictures/logo-meatinfo@2x.wepb 2x">
+            <img class="la-header__logo-image" src="./img/pictures/logo-meatinfo@1x.png" srcset="./img/pictures/logo-meatinfo@2x.png 2x" alt="Meatinfo.ru">
+          </picture>
+        </a>
+        <div class="la-header__links-wrap">
+          <a href="tel:+78124253265" class="la-header__call">
+            <svg class="la-header__phone-icon" width="24" height="24">
+              <use xlink:href="#icon-phone"></use>
+            </svg>
+            <div class="la-header__number">+7 (812) 425-32-65</div>
+          </a>
+          <a href="mailto:sale@meatinfo.ru" class="la-header__mail">
+            <svg class="la-header__mail-icon" width="24" height="24">
+              <use xlink:href="#icon-mail"></use>
+            </svg>
+            <div class="la-header__email">sale@meatinfo.ru</div>
+          </a>
+        </div>
+        <a href="#la-request-form" class="la-header__submit">Submit a request</a>
+      </div>
+    </header>
+    <main class="la-container__main">
+      <h1 class="visually-hidden">Заголовок.</h1>
+      <section class="la-reason">
+        <div class="la-reason__top-wrap">
+          <h2 class="la-reason__title">Monthly analytics of the Russian meat industry</h2>
+          <div class="la-reason__slogan">Detailed analysis of the industry for domestic production and imports of meat, meat products, livestock in live weight.</div>
+          <div class="la-reason__wrapper la-solutions">
+            <h3 class="la-solutions__title">Our solution is best suited for</h3>
+            <ul class="la-solutions__list">
+              <li class="la-solutions__item">
+                Exporters / importers worldwide who are interested in the Russian market
+              </li>
+              <li class="la-solutions__item">
+                Russia's export competitors (Brazil, USA, Canada and others): large companies or representative offices of trade and export authorities in other countries
+              </li>
+            </ul>
+            <a href="#la-request-form" class="la-solutions__request js-request-link">submit a request</a>
+          </div>
+        </div>
+        <div class="la-reason__text-wrap">
+          <p class="la-reason__text">
+            Monthly analytics of the Russian meat industry is a detailed study of the meat and meat products market, which is based on the indicators of production base, foreign economic component, and price dynamics. It includes the main trends of the market, the factors that most noticeably affected the development of the industry in the reporting period, a forecast regarding the further development of the industry.
+          </p>
+        </div>
+      </section>
+      <section class="la-research">
+        <div class="la-research__details">
+          <h2 class="la-research__title">Research directions of the Russian meat industry</h2>
+          <ul class="la-research__list">
+            <li class="la-research__item">Domestic animal husbandry (cattle, pigs, poultry, etc.);</li>
+            <li class="la-research__item">Domestic animal husbandry (cattle, pigs, poultry, etc.);</li>
+            <li class="la-research__item">Domestic production of meat products (sausages, semi-finished meat products, canned food, etc.);</li>
+            <li class="la-research__item">Import of meat, meat products, livestock and poultry in live weight;</li>
+          </ul>
+          <div class="la-research__note">The assessment is made in volume (tons) and in monetary terms (prices in rubles).</div>
+        </div>
+        <article class="la-research__article">
+          <h2 class="la-research__article-title">
+            What data are used for calculations?
+          </h2>
+          <p class="la-research__article-text">
+            ROSSTAT, the Ministry of Agriculture of the Russian Federation, the Rosselkhoznadzor, the Federal Customs Service of the Russian Federation, the United States Department of Agriculture, information and analytical agencies, the Meatinfo analytical department database (price monitoring database, customs database statistics), mass media (industry and specialized magazines, newspapers), industry and reference literature.
+          </p>
+        </article>
+      </section>
+      <section class="la-report">
+        <h2 class="la-report__title">
+          What's included in the monthly report?
+        </h2>
+        <ul class="la-report__list">
+          <li class="la-report__item">Detailed analysis of the industry;</li>
+          <li class="la-report__item">Identification of the factors that most strongly influenced the development of the industry during the reporting period;</li>
+          <li class="la-report__item">Comparative tables by main areas (by region, by product / raw material/prices);</li>
+          <li class="la-report__item">Graphical representation of the dynamics of indicators by industry direction;</li>
+          <li class="la-report__item">Graphic representation of structural changes in the industry (by region, by product);</li>
+          <li class="la-report__item">Assessment of the market price situation by area;</li>
+          <li class="la-report__item">Comparison of indicators for previous periods.</li>
+        </ul>
+        <div class="la-report__bonus-title">Bonus</div>
+        <div class="la-report__bonus-text">Weekly analytical reviews of key events in the Russian meat market over the past week - sent on Mondays until 15.00.</div>
+      </section>
+      <section class="la-scans">
+        <h2 class="visually-hidden">Pages from out presentation</h2>
+        <div class="la-scans__container">
+          <div class="la-scans__slider swiper-container">
+            <div class="swiper-wrapper">
+              <div class="la-scans__slide swiper-slide">
+                <picture>
+                  <source type="image/webp" srcset="./img/pictures/scan-1@1x.webp, ./img/pictures/scan-1@2x.webp 2x">
+                  <img class="la-scans__image" alt="scan-1" src="./img/pictures/scan-1@1x.png" srcset="./img/pictures/scan-1@2x.png 2x">
+                </picture>
+              </div>
+              <div class="la-scans__slide swiper-slide">
+                <picture>
+                  <source type="image/webp" srcset="./img/pictures/scan-2@1x.webp, ./img/pictures/scan-2@2x.webp 2x">
+                  <img class="la-scans__image" alt="scan-2" src="./img/pictures/scan-2@1x.png" srcset="./img/pictures/scan-2@2x.png 2x">
+                </picture>
+              </div>
+              <div class="la-scans__slide swiper-slide">
+                <picture>
+                  <source type="image/webp" srcset="./img/pictures/scan-3@1x.webp, ./img/pictures/scan-3@2x.webp 2x">
+                  <img class="la-scans__image" alt="scan-3" src="./img/pictures/scan-3@1x.png" srcset="./img/pictures/scan-3@2x.png 2x">
+                </picture>
+              </div>
+              <div class="la-scans__slide swiper-slide">
+                <picture>
+                  <source type="image/webp" srcset="./img/pictures/scan-4@1x.webp, ./img/pictures/scan-4@2x.webp 2x">
+                  <img class="la-scans__image" alt="scan-4" src="./img/pictures/scan-4@1x.png" srcset="./img/pictures/scan-4@2x.png 2x">
+                </picture>
+              </div>
+              <div class="la-scans__slide swiper-slide">
+                <picture>
+                  <source type="image/webp" srcset="./img/pictures/scan-5@1x.webp, ./img/pictures/scan-5@2x.webp 2x">
+                  <img class="la-scans__image" alt="scan-5" src="./img/pictures/scan-5@1x.png" srcset="./img/pictures/scan-5@2x.png 2x">
+                </picture>
+              </div>
+              <div class="la-scans__slide swiper-slide">
+                <picture>
+                  <source type="image/webp" srcset="./img/pictures/scan-6@1x.webp, ./img/pictures/scan-6@2x.webp 2x">
+                  <img class="la-scans__image" alt="scan-6" src="./img/pictures/scan-6@1x.png" srcset="./img/pictures/scan-6@2x.png 2x">
+                </picture>
+              </div>
+            </div>
+          </div>
+          <div class="la-scans__button la-scans__button--prev">
+            <svg class="la-scans__icon" width="9" height="14">
+              <use xlink:href="#icon-left-arrow"></use>
+            </svg>
+          </div>
+          <div class="la-scans__button la-scans__button--next">
+            <svg class="la-scans__icon" width="9" height="14">
+              <use xlink:href="#icon-right-arrow"></use>
+            </svg>
+          </div>
+        </div>
+      </section>
+      <section class="la-prices">
+        <h2 class="la-prices__title">Prices</h2>
+        <ul class="la-prices__list">
+          <li class="la-prices__item">
+            <div class="la-prices__terms">3-month subscription</div>
+            <div class="la-prices__sum">417$</div>
+            <div class="la-prices__note">(at least 3 months)</div>
+          </li>
+          <li class="la-prices__item">
+            <div class="la-prices__terms">6-month subscription</div>
+            <div class="la-prices__sum">789$</div>
+          </li>
+          <li class="la-prices__item">
+            <div class="la-prices__terms">12-month subscription</div>
+            <div class="la-prices__sum">1499$</div>
+          </li>
+        </ul>
+      </section>
+      <section class="la-request" id="la-request-form">
+        <div class="la-request__container">
+          <h2 class="la-request__title">Submit a request</h2>
+          <form method="POST" class="la-request__form">
+            <div class="la-request__form-wrap">
+              <!-- при ошибке к la-request__item добавляется класс la-request__item--error -->
+              <div class="la-request__item la-request__item--email">
+                <label for="request-email" class="la-request__label">E-mail</label>
+                <input type="email" class="la-request__input" id="request-email" required>
+                <!-- la-request__error - сообщение о ошибке -->
+                <!--  la-request__error - видно только если у родительского la-request__item есть класс с модификатором la-request__item--error -->
+                <div class="la-request__error">Error text message goes here</div>
+              </div>
+              <div class="la-request__item la-request__item--company">
+                <label for="request-company" class="la-request__label">Company's name</label>
+                <input type="text" class="la-request__input" id="request-company" required>
+                <!--  la-request__error - сообщение о ошибке -->
+                <!--  la-request__error - видно только если у родительского la-request__item есть класс с модификатором la-request__item--error -->
+                <div class="la-request__error">Error text message goes here</div>
+              </div>
+              <div class="la-request__item la-request__item--phone">
+                <label for="request-phone" class="la-request__label">Phone number</label>
+                <input type="tel" class="la-request__input" id="request-phone" required>
+                <!-- la-request__error - сообщение о ошибке -->
+                <!--  la-request__error - видно только если у родительского la-request__item есть класс с модификатором la-request__item--error -->
+                <div class="la-request__error">Error text message goes here</div>
+              </div>
+              <div class="la-request__item la-request__item--contact">
+                <label for="request-contact" class="la-request__label">Contact person's name</label>
+                <input type="text" class="la-request__input" id="request-contact" required>
+                <!-- la-request__error - сообщение о ошибке -->
+                <!--  la-request__error - видно только если у родительского la-request__item есть класс с модификатором la-request__item--error -->
+                <div class="la-request__error">Error text message goes here</div>
+              </div>
+              <div class="la-request__item la-request__item--duration">
+                <label for="request-duration-select" class="la-request__label">How many months of subscription are you interested in?</label>
+                <select name="request-duration" id="request-duration-select" class="la-request__select">
+                  <option>3 months – 417$</option>
+                  <option>4 months – 617$</option>
+                </select>
+              </div>
+              <button class="la-request__submit" type="submit">submit a request</button>
+            </div>
+          </form>
+          <div class="la-request__privacy">By clicking the “Submit a request” button, I agree to the <a href="#" class="la-request__privacy-link" target="_blank">Terms</a> of Use and <a href="#" class="la-request__terms-link" target="_blank">Privacy Policy</a>.</div>
+        </div>
+      </section>
+      <section class="la-about-us">
+        <h2 class="la-about-us__title">Who are we</h2>
+        <p class="la-about-us__text">
+          Meatinfo.ru is the biggest b2b online marketplace for the meat industry in Russia. Here you could publish your ads, be updated about last important events, find business contacts. Meatinfo.ru is rapidly gaining momentum. For example, in February 2021, we had the following averages:
+        </p>
+        <ul class="la-about-us__list">
+          <li class="la-about-us__item">
+            <span class="la-about-us__number">10,000</span>
+            <div class="la-about-us__note">visitors daily</div>
+          </li>
+          <li class="la-about-us__item">
+            <span class="la-about-us__number">2,000</span>
+            <div class="la-about-us__note">ads daily</div>
+          </li>
+          <li class="la-about-us__item">
+            <span class="la-about-us__number">20,000</span>
+            <div class="la-about-us__note">b2b contacs</div>
+          </li>
+          <li class="la-about-us__item">
+            <span class="la-about-us__number">13</span>
+            <div class="la-about-us__note">years on the market</div>
+          </li>
+        </ul>
+      </section>
+      <section class="la-reviews">
+        <div class="la-reviews__container">
+          <h2 class="la-reviews__title">Reviews about us</h2>
+          <button class="la-reviews__button la-reviews__button--prev">
+            <svg class="la-reviews__icon" width="9" height="14">
+              <use xlink:href="#icon-left-arrow"></use>
+            </svg>
+          </button>
+          <button class="la-reviews__button la-reviews__button--next">
+            <svg class="la-reviews__icon" width="9" height="14">
+              <use xlink:href="#icon-right-arrow"></use>
+            </svg>
+          </button>
+          <div class="la-reviews__slider swiper-container">
+            <div class="swiper-wrapper">
+              <div class="la-reviews__slide swiper-slide">
+                <div class="la-reviews__slide-info">
+                  <div class="la-reviews__author">
+                    <img src="./img/pictures/user-1.png" alt="Annette Black" class="la-reviews__image" width="80" height="80">
+                    <div class="la-reviews__info">
+                      <div class="la-reviews__name">Annette Black</div>
+                      <div class="la-reviews__date">01/01/2021</div>
+                      <div class="la-reviews__position">Длинное название должности в две строки в компании “Наша любимая компания”</div>
+                    </div>
+                  </div>
+                  <p class="la-reviews__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi in at amet, quis lacus ligula ultrices amet. Venenatis, laoreet et integer consequat nisl, mattis. Massa pharetra sagittis, leo nibh eget lacus vitae. Ut condimentum mattis enim venenatis nisi, magna.
+                  </p>
+                </div>
+              </div>
+              <div class="la-reviews__slide swiper-slide">
+                <div class="la-reviews__slide-info">
+                  <div class="la-reviews__author">
+                    <img src="./img/pictures/user-2.png" alt="Bessie Cooper" class="la-reviews__image" width="80" height="80">
+                    <div class="la-reviews__info">
+                      <div class="la-reviews__name">Bessie Cooper</div>
+                      <div class="la-reviews__date">31/12/2021</div>
+                      <div class="la-reviews__position">Должность в “Компании”</div>
+                    </div>
+                  </div>
+                  <p class="la-reviews__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi in at amet, quis lacus ligula ultrices amet. Venenatis, laoreet et integer consequat nisl, mattis. Massa pharetra sagittis, leo nibh eget lacus vitae. Ut condimentum mattis enim venenatis nisi, magna.
+                  </p>
+                </div>
+              </div>
+              <div class="la-reviews__slide swiper-slide">
+                <div class="la-reviews__slide-info">
+                  <div class="la-reviews__author">
+                    <img src="./img/pictures/user-2.png" alt="Bessie Cooper" class="la-reviews__image" width="80" height="80">
+                    <div class="la-reviews__info">
+                      <div class="la-reviews__name">Bessie Cooper</div>
+                      <div class="la-reviews__date">31/12/2021</div>
+                      <div class="la-reviews__position">Должность в “Компании”</div>
+                    </div>
+                  </div>
+                  <p class="la-reviews__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio molestias maxime provident dicta aspernatur dignissimos! Quidem nulla magni consequatur ducimus obcaecati. Illum incidunt mollitia accusamus impedit vero harum laborum velit.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="la-questions">
+        <h2 class="la-questions__title">Frequently asked questions</h2>
+        <ul class="la-questions__list">
+          <li class="la-questions__item">
+            <button class="la-questions__button js-questions-button" type="button">
+              <span class="la-questions__button-slogan">Question #1</span>
+              <span class="la-questions__button-icon"></span>
+            </button>
+            <p class="la-questions__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi in at amet, quis lacus ligula ultrices amet. Venenatis, laoreet et integer consequat nisl, mattis. Massa pharetra sagittis, leo nibh eget lacus vitae. Ut condimentum mattis enim venenatis nisi, magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi in at amet, quis lacus ligula ultrices amet. Venenatis, laoreet et integer consequat nisl, mattis. Massa pharetra sagittis, leo nibh eget lacus vitae.
+            </p>
+          </li>
+          <li class="la-questions__item">
+            <button class="la-questions__button js-questions-button" type="button">
+              <span class="la-questions__button-slogan">Question #2</span>
+              <span class="la-questions__button-icon"></span>
+            </button>
+            <p class="la-questions__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi in at amet, quis lacus ligula ultrices amet. Venenatis, laoreet et integer consequat nisl, mattis. Massa pharetra sagittis, leo nibh eget lacus vitae. Ut condimentum mattis enim venenatis nisi, magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi in at amet, quis lacus ligula ultrices amet. Venenatis, laoreet et integer consequat nisl, mattis. Massa pharetra sagittis, leo nibh eget lacus vitae.
+            </p>
+          </li>
+          <li class="la-questions__item">
+            <button class="la-questions__button js-questions-button" type="button">
+              <span class="la-questions__button-slogan">Question #3</span>
+              <span class="la-questions__button-icon"></span>
+            </button>
+            <p class="la-questions__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi in at amet, quis lacus ligula ultrices amet. Venenatis, laoreet et integer consequat nisl, mattis. Massa pharetra sagittis, leo nibh eget lacus vitae. Ut condimentum mattis enim venenatis nisi, magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi in at amet, quis lacus ligula ultrices amet. Venenatis, laoreet et integer consequat nisl, mattis. Massa pharetra sagittis, leo nibh eget lacus vitae.
+            </p>
+          </li>
+          <li class="la-questions__item">
+            <button class="la-questions__button js-questions-button" type="button">
+              <span class="la-questions__button-slogan">Question #4</span>
+              <span class="la-questions__button-icon"></span>
+            </button>
+            <p class="la-questions__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi in at amet, quis lacus ligula ultrices amet. Venenatis, laoreet et integer consequat nisl, mattis. Massa pharetra sagittis, leo nibh eget lacus vitae. Ut condimentum mattis enim venenatis nisi, magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi in at amet, quis lacus ligula ultrices amet. Venenatis, laoreet et integer consequat nisl, mattis. Massa pharetra sagittis, leo nibh eget lacus vitae.
+            </p>
+          </li>
+          <li class="la-questions__item">
+            <button class="la-questions__button js-questions-button" type="button">
+              <span class="la-questions__button-slogan">Question #5</span>
+              <span class="la-questions__button-icon"></span>
+            </button>
+            <p class="la-questions__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi in at amet, quis lacus ligula ultrices amet. Venenatis, laoreet et integer consequat nisl, mattis. Massa pharetra sagittis, leo nibh eget lacus vitae. Ut condimentum mattis enim venenatis nisi, magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi in at amet, quis lacus ligula ultrices amet. Venenatis, laoreet et integer consequat nisl, mattis. Massa pharetra sagittis, leo nibh eget lacus vitae.
+            </p>
+          </li>
+          <li class="la-questions__item">
+            <button class="la-questions__button js-questions-button" type="button">
+              <span class="la-questions__button-slogan">Question #6</span>
+              <span class="la-questions__button-icon"></span>
+            </button>
+            <p class="la-questions__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi in at amet, quis lacus ligula ultrices amet. Venenatis, laoreet et integer consequat nisl, mattis. Massa pharetra sagittis, leo nibh eget lacus vitae. Ut condimentum mattis enim venenatis nisi, magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi in at amet, quis lacus ligula ultrices amet. Venenatis, laoreet et integer consequat nisl, mattis. Massa pharetra sagittis, leo nibh eget lacus vitae.
+            </p>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="la-container__footer la-footer">
+      <div class="la-footer__top-container">
+        <a href="#" target="_blank" class="la-footer__logo-link">
+          <picture>
+            <source type="image/webp" srcset="./img/pictures/logo-meatinfo@1x.webp, ./img/pictures/logo-meatinfo@2x.wepb 2x">
+            <img class="la-footer__logo-image" alt="Meatinfo.ru" src="./img/pictures/logo-meatinfo@1x.png" srcset="./img/pictures/logo-meatinfo@2x.png 2x">
+          </picture>
+        </a>
+        <a href="tel:+78124253265" class="la-footer__call">
+          <svg class="la-footer__phone-icon" width="24" height="24">
+            <use xlink:href="#icon-phone"></use>
+          </svg>
+          <div class="la-footer__number">+7 (812) 425-32-65</div>
+        </a>
+        <a href="mailto:sale@meatinfo.ru" class="la-footer__mail">
+          <svg class="la-footer__mail-icon" width="24" height="24">
+            <use xlink:href="#icon-mail"></use>
+          </svg>
+          <div class="la-footer__email">sale@meatinfo.ru</div>
+        </a>
+        <ul class="la-footer__social la-social">
+          <li class="la-social__item la-social__item--twitter">
+            <div class="visually-hidden"></div>
+            <a href="#" target="_blank" class="la-social__link">
+              <svg class="la-social__icon" width="20" height="20">
+                <use xlink:href="#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="la-social__item la-social__item--vk">
+            <div class="visually-hidden"></div>
+              <a href="#" target="_blank" class="la-social__link">
+              <svg class="la-social__icon" width="25" height="18">
+                <use xlink:href="#icon-vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="la-social__item la-social__item--facebook">
+            <div class="visually-hidden"></div>
+              <a href="#" target="_blank" class="la-social__link">
+              <svg class="la-social__icon" width="23" height="30">
+                <use xlink:href="#icon-fb"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="la-footer__down-container">
+        <div class="la-footer__copyrights">Meatinfo.ru © 2021 All rights reserved</div>
+        <a href="#" target="_blank" class="la-footer__terms-link">Terms of Use</a>
+        <a href="#" target="_blank" class="la-footer__privacy-link">Privacy Policy</a>
+      </div>
+    </footer>
+  </div>
+  <div class="blackout blackout--hidden"></div>
+  <script src="./libs/swiper/swiper-bundle.min.js"></script>
+  <script src="./js/sliders.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>
