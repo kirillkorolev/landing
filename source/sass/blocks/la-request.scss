@@ -1,4 +1,8 @@
 .la-request {
+  padding-top: 112px;
+}
+
+.la-request__wrapper {
   border-radius: 3px;
   background-color: $blue;
   color: $white;
@@ -34,7 +38,7 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
-  color: $black;
+  color: $dark-black;
   padding: 12px;
   margin: 28px 12px 0;
   bottom: 0;
@@ -143,6 +147,7 @@
   color: $dark-black;
   font-size: 16px;
   line-height: 24px;
+  outline: none;
 }
 
 .la-request__form-wrap {
@@ -180,7 +185,7 @@
 }
 
 @media (max-width: 1439px) {
-  .la-request {
+  .la-request__wrapper {
     max-width: 960px;
   }
 
@@ -194,6 +199,10 @@
 
 @media (max-width: 1023px) {
   .la-request {
+    padding-top: 97px;
+  }
+
+  .la-request__wrapper {
     max-width: 720px;
     padding: 49px 16px 45px;
   }
@@ -221,6 +230,10 @@
   }
 
   .la-request {
+    padding-top: 41px;
+  }
+
+  .la-request__wrapper {
     padding: 0 20px;
     border-radius: 0;
     background-color: $white;

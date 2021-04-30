@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta name="description" content="Monthly analytics of industry - Lorem ipsum, dolor sit amet consectetur adipisicing elit.">
+  <meta name="keywords" content="Lorem, ipsum, dolor, amet, consectetur, adipisicing">
   <link rel="preload" href="css/style.min.css" as="style">
   <link rel="preload" href="fonts/roboto-regular.woff2" as="font" crossorigin="">
   <link rel="preload" href="fonts/roboto-regular.woff" as="font" crossorigin="">
@@ -13,6 +13,8 @@
   <link rel="preload" href="fonts/roboto-bold.woff" as="font" crossorigin="">
   <link rel="preload" href="fonts/roboto-medium.woff2" as="font" crossorigin="">
   <link rel="preload" href="fonts/roboto-medium.woff" as="font" crossorigin="">
+  <link rel="preload" href="fonts/roboto-italic.woff2" as="font" crossorigin="">
+  <link rel="preload" href="fonts/roboto-italic.woff" as="font" crossorigin="">
   <link rel="shortcut icon" type="image/ico" sizes="16x16" href="favicon.ico">
   <title>Monthly analytics of industry</title>
   <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
@@ -41,7 +43,7 @@
       <div class="la-header__container">
         <a href="#" target="_blank" class="la-header__logo-link">
           <picture>
-            <source type="image/webp" srcset="./img/pictures/logo-meatinfo@1x.webp, ./img/pictures/logo-meatinfo@2x.wepb 2x">
+            <source type="image/webp" srcset="./img/pictures/logo-meatinfo@1x.webp, ./img/pictures/logo-meatinfo@2x.webp 2x">
             <img class="la-header__logo-image" src="./img/pictures/logo-meatinfo@1x.png" srcset="./img/pictures/logo-meatinfo@2x.png 2x" alt="Meatinfo.ru">
           </picture>
         </a>
@@ -88,24 +90,26 @@
         </div>
       </section>
       <section class="la-research">
-        <div class="la-research__details">
-          <h2 class="la-research__title">Research directions of the Russian meat industry</h2>
-          <ul class="la-research__list">
-            <li class="la-research__item">Domestic animal husbandry (cattle, pigs, poultry, etc.);</li>
-            <li class="la-research__item">Domestic animal husbandry (cattle, pigs, poultry, etc.);</li>
-            <li class="la-research__item">Domestic production of meat products (sausages, semi-finished meat products, canned food, etc.);</li>
-            <li class="la-research__item">Import of meat, meat products, livestock and poultry in live weight;</li>
-          </ul>
-          <div class="la-research__note">The assessment is made in volume (tons) and in monetary terms (prices in rubles).</div>
+        <div class="la-research__container">
+          <div class="la-research__details">
+            <h2 class="la-research__title">Research directions of the Russian meat industry</h2>
+            <ul class="la-research__list">
+              <li class="la-research__item">Domestic animal husbandry (cattle, pigs, poultry, etc.);</li>
+              <li class="la-research__item">Domestic animal husbandry (cattle, pigs, poultry, etc.);</li>
+              <li class="la-research__item">Domestic production of meat products (sausages, semi-finished meat products, canned food, etc.);</li>
+              <li class="la-research__item">Import of meat, meat products, livestock and poultry in live weight;</li>
+            </ul>
+            <div class="la-research__note">The assessment is made in volume (tons) and in monetary terms (prices in rubles).</div>
+          </div>
+          <article class="la-research__article">
+            <h2 class="la-research__article-title">
+              What data are used for calculations?
+            </h2>
+            <p class="la-research__article-text">
+              ROSSTAT, the Ministry of Agriculture of the Russian Federation, the Rosselkhoznadzor, the Federal Customs Service of the Russian Federation, the United States Department of Agriculture, information and analytical agencies, the Meatinfo analytical department database (price monitoring database, customs database statistics), mass media (industry and specialized magazines, newspapers), industry and reference literature.
+            </p>
+          </article>
         </div>
-        <article class="la-research__article">
-          <h2 class="la-research__article-title">
-            What data are used for calculations?
-          </h2>
-          <p class="la-research__article-text">
-            ROSSTAT, the Ministry of Agriculture of the Russian Federation, the Rosselkhoznadzor, the Federal Customs Service of the Russian Federation, the United States Department of Agriculture, information and analytical agencies, the Meatinfo analytical department database (price monitoring database, customs database statistics), mass media (industry and specialized magazines, newspapers), industry and reference literature.
-          </p>
-        </article>
       </section>
       <section class="la-report">
         <h2 class="la-report__title">
@@ -197,50 +201,52 @@
         </ul>
       </section>
       <section class="la-request" id="la-request-form">
-        <div class="la-request__container">
-          <h2 class="la-request__title">Submit a request</h2>
-          <form method="POST" class="la-request__form">
-            <div class="la-request__form-wrap">
-              <!-- при ошибке к la-request__item добавляется класс la-request__item--error -->
-              <div class="la-request__item la-request__item--email">
-                <label for="request-email" class="la-request__label">E-mail</label>
-                <input type="email" class="la-request__input" id="request-email" required="">
-                <!-- la-request__error - сообщение о ошибке -->
-                <!--  la-request__error - видно только если у родительского la-request__item есть класс с модификатором la-request__item--error -->
-                <div class="la-request__error">Error text message goes here</div>
+        <div class="la-request__wrapper">
+          <div class="la-request__container">
+            <h2 class="la-request__title">Submit a request</h2>
+            <form method="POST" class="la-request__form">
+              <div class="la-request__form-wrap">
+                <!-- при ошибке к la-request__item добавляется класс la-request__item--error -->
+                <div class="la-request__item la-request__item--email">
+                  <label for="request-email" class="la-request__label">E-mail</label>
+                  <input type="email" class="la-request__input" id="request-email">
+                  <!-- la-request__error - сообщение о ошибке -->
+                  <!--  la-request__error - видно только если у родительского la-request__item есть класс с модификатором la-request__item--error -->
+                  <div class="la-request__error">Error: enter email!</div>
+                </div>
+                <div class="la-request__item la-request__item--company">
+                  <label for="request-company" class="la-request__label">Company's name</label>
+                  <input type="text" class="la-request__input" id="request-company">
+                  <!--  la-request__error - сообщение о ошибке -->
+                  <!--  la-request__error - видно только если у родительского la-request__item есть класс с модификатором la-request__item--error -->
+                  <div class="la-request__error">Error: enter company's name!</div>
+                </div>
+                <div class="la-request__item la-request__item--phone">
+                  <label for="request-phone" class="la-request__label">Phone number</label>
+                  <input type="tel" class="la-request__input" id="request-phone">
+                  <!-- la-request__error - сообщение о ошибке -->
+                  <!--  la-request__error - видно только если у родительского la-request__item есть класс с модификатором la-request__item--error -->
+                  <div class="la-request__error">Error: phone number!</div>
+                </div>
+                <div class="la-request__item la-request__item--contact">
+                  <label for="request-contact" class="la-request__label">Contact person's name</label>
+                  <input type="text" class="la-request__input" id="request-contact">
+                  <!-- la-request__error - сообщение о ошибке -->
+                  <!--  la-request__error - видно только если у родительского la-request__item есть класс с модификатором la-request__item--error -->
+                  <div class="la-request__error">Error: enter person's name!</div>
+                </div>
+                <div class="la-request__item la-request__item--duration">
+                  <label for="request-duration-select" class="la-request__label">How many months of subscription are you interested in?</label>
+                  <select name="request-duration" id="request-duration-select" class="la-request__select">
+                    <option>3 months – 417$</option>
+                    <option>4 months – 617$</option>
+                  </select>
+                </div>
+                <button class="la-request__submit" type="submit">submit a request</button>
               </div>
-              <div class="la-request__item la-request__item--company">
-                <label for="request-company" class="la-request__label">Company's name</label>
-                <input type="text" class="la-request__input" id="request-company" required="">
-                <!--  la-request__error - сообщение о ошибке -->
-                <!--  la-request__error - видно только если у родительского la-request__item есть класс с модификатором la-request__item--error -->
-                <div class="la-request__error">Error text message goes here</div>
-              </div>
-              <div class="la-request__item la-request__item--phone">
-                <label for="request-phone" class="la-request__label">Phone number</label>
-                <input type="tel" class="la-request__input" id="request-phone" required="">
-                <!-- la-request__error - сообщение о ошибке -->
-                <!--  la-request__error - видно только если у родительского la-request__item есть класс с модификатором la-request__item--error -->
-                <div class="la-request__error">Error text message goes here</div>
-              </div>
-              <div class="la-request__item la-request__item--contact">
-                <label for="request-contact" class="la-request__label">Contact person's name</label>
-                <input type="text" class="la-request__input" id="request-contact" required="">
-                <!-- la-request__error - сообщение о ошибке -->
-                <!--  la-request__error - видно только если у родительского la-request__item есть класс с модификатором la-request__item--error -->
-                <div class="la-request__error">Error text message goes here</div>
-              </div>
-              <div class="la-request__item la-request__item--duration">
-                <label for="request-duration-select" class="la-request__label">How many months of subscription are you interested in?</label>
-                <select name="request-duration" id="request-duration-select" class="la-request__select">
-                  <option>3 months – 417$</option>
-                  <option>4 months – 617$</option>
-                </select>
-              </div>
-              <button class="la-request__submit" type="submit">submit a request</button>
-            </div>
-          </form>
-          <div class="la-request__privacy">By clicking the “Submit a request” button, I agree to the <a href="#" class="la-request__privacy-link" target="_blank">Terms</a> of Use and <a href="#" class="la-request__terms-link" target="_blank">Privacy Policy</a>.</div>
+            </form>
+            <div class="la-request__privacy">By clicking the “Submit a request” button, I agree to the <a href="#" class="la-request__privacy-link" target="_blank">Terms of Use</a> and <a href="#" class="la-request__terms-link" target="_blank">Privacy Policy</a>.</div>
+          </div>
         </div>
       </section>
       <section class="la-about-us">
@@ -395,7 +401,7 @@
       <div class="la-footer__top-container">
         <a href="#" target="_blank" class="la-footer__logo-link">
           <picture>
-            <source type="image/webp" srcset="./img/pictures/logo-meatinfo@1x.webp, ./img/pictures/logo-meatinfo@2x.wepb 2x">
+            <source type="image/webp" srcset="./img/pictures/logo-meatinfo@1x.webp, ./img/pictures/logo-meatinfo@2x.webp 2x">
             <img class="la-footer__logo-image" alt="Meatinfo.ru" src="./img/pictures/logo-meatinfo@1x.png" srcset="./img/pictures/logo-meatinfo@2x.png 2x">
           </picture>
         </a>
@@ -445,7 +451,13 @@
       </div>
     </footer>
   </div>
-  <div class="blackout blackout--hidden"></div>
+  <div class="la-thanks la-thanks--hidden">
+    <button class="la-thanks__close js-close-thanks-modal" type="button" arial-label="close modal"></button>
+    <div class="la-thanks__slogan">Thank you!</div>
+    <div class="la-thanks__text">We got your request and within 2 business days, we will get in touch.</div>
+    <div class="la-thanks__text">Meanwhile, take a look at <a href="#" class="la-thanks__link">last offers</a> from our users!</div>
+  </div>
+  <div class="la-blackout la-blackout--hidden"></div>
   <script src="./libs/swiper/swiper-bundle.min.js"></script>
   <script src="./js/sliders.js"></script>
   <script src="./js/script.js"></script>

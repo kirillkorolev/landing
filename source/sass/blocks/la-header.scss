@@ -1,3 +1,14 @@
+@keyframes slideInDown {
+  from {
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
 .la-header {
   background-color: $blue;
   width: 100%;
@@ -8,9 +19,21 @@
     left: 0;
     z-index: 2;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+    animation-name: slideInDown;
+    animation-duration: 0.8s;
 
     .la-header__submit {
       display: inline-block;
+    }
+
+    .la-header__container {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .la-header__links-wrap {
+      flex-grow: 1;
+      justify-content: flex-end;
     }
   }
 }
@@ -84,6 +107,9 @@
   height: 24px;
   margin-right: 10px;
   flex-shrink: 0;
+
+  animation-name: fadeInUp;
+  animation-duration: 0.5s;
 }
 
 .la-header__logo-image {
@@ -188,6 +214,8 @@
       .la-header__container {
         align-items: center;
         justify-content: space-between;
+        padding-top: 0;
+        padding-bottom: 0;
       }
 
       .la-header__links-wrap {

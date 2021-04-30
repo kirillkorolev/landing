@@ -1,0 +1,102 @@
+@keyframes zoomInDown {
+  from {
+    opacity: 0;
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  }
+}
+
+.la-thanks {
+  &--hidden {
+    display: none;
+  }
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 588px;
+  padding: 40px;
+  background-color: $white;
+  border-radius: 3px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 4;
+  text-align: center;
+  animation: zoomInDown;
+  animation-duration: 0.5s;
+}
+
+.la-thanks__slogan {
+  margin-bottom: 4px;
+}
+
+.la-thanks__link {
+  color: $blue;
+  text-decoration: underline;
+  transition: all 0.4s ease-in-out 0.1s;
+
+  &:hover,
+  &:focus {
+    color: $yellow;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+.la-thanks__close {
+  @include reset-button;
+
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  transition: transform 0.4s ease-out;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: $dark-grey;
+    top: 6px;
+    width: 15px;
+    height: 1.5px;
+    transition: background-color 0.4s ease-in 0.1s;
+  }
+
+  &::before {
+    left: 0;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    right: 0;
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:focus::before,
+  &:hover::after,
+  &:focus::after {
+    background-color: $black;
+  }
+
+  &:hover {
+    transform: rotate(-90deg);
+  }
+}
+
+@media (max-width: 767px) {
+  .la-thanks {
+    width: 100%;
+    max-width: 320px;
+  }
+}
